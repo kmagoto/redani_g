@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redadi Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .logo-image {
+            padding: 20px;
+            margin: 15px;
+            max-width: 250px;
+            text-align: center;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-brand-black">
+    <!-- Navigation -->
+    <nav class="fixed w-full h-[150px] bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <div class="flex justify-between items-center py-4 ">
+                <div class="flex items-center">
+                    <img src="images/img4.jpeg" alt="logo" class="logo-image">
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-brand-black hover:text-brand-red transition-colors">Home</a>
+                    <a href="#about" class="text-brand-black hover:text-brand-red transition-colors">About</a>
+                    <a href="#services" class="text-brand-black hover:text-brand-red transition-colors">Services</a>
+                    <a href="#portfolio" class="text-brand-black hover:text-brand-red transition-colors">Portfolio</a>
+                    <a href="#contact" class="text-brand-black hover:text-brand-red transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-brand-black" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white border-t border-gray-100" id="mobile-menu">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 text-brand-black hover:text-brand-red">Home</a>
+                <a href="#about" class="block py-2 text-brand-black hover:text-brand-red">About</a>
+                <a href="#services" class="block py-2 text-brand-black hover:text-brand-red">Services</a>
+                <a href="#portfolio" class="block py-2 text-brand-black hover:text-brand-red">Portfolio</a>
+                <a href="#contact" class="block py-2 text-brand-black hover:text-brand-red">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="min-h-screen flex items-center bg-gradient-to-br from-brand-black via-gray-900 to-brand-red">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md: mt-[150px]">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl lg:text-7xl font-bold mb-6">
+                        Unleash Your
+                        <span class="text-brand-red block">Brand's</span>
+                        Brilliance
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 leading-relaxed">
+                        Transform your business with cutting-edge branding solutions that captivate audiences and drive
+                        results.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-brand-red hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                            Start Your Project
+                        </button>
+                        <button
+                            class="border-2 border-white text-white hover:bg-white hover:text-brand-black px-8 py-4 rounded-lg font-semibold transition-colors">
+                            View Our Work
+                        </button>
+                    </div>
+                </div>
+                <div class="relative items-center justify-center">
+                    <div>
+                        <img src="images/img3.jpeg" alt="rgg logo" class=" w-2xs rounded-full ml-[90px] mt-12">
+                        <!-- <style>
+                            .rounded-image {
+                                width: 200px;
+                                /* Adjust size as needed */
+                                height: 200px;
+                                border-radius: 100%;
+                                /* Makes image circular */
+                                object-fit: cover;
+                                /* Ensures image fits nicely */
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-left: 90px;
+                            }
+                        </style> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brand-black mb-6">About Redadi Group</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We're a creative branding agency passionate about crafting memorable brand experiences that resonate
+                    with your audience.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lightbulb text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Creative Vision</h3>
+                    <p class="text-gray-600">We bring fresh perspectives and innovative ideas to every project, ensuring
+                        your brand stands out.</p>
+                </div>
+                <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Expert Team</h3>
+                    <p class="text-gray-600">Our diverse team of designers, strategists, and developers work together to
+                        deliver exceptional results.</p>
+                </div>
+                <div class="text-center p-8 rounded-xl hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Results Driven</h3>
+                    <p class="text-gray-600">We focus on creating brands that not only look great but also drive
+                        business growth and success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brand-black mb-6">Our Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    From brand strategy to digital design, we offer comprehensive solutions to elevate your brand.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Identity</h3>
+                    <p class="text-gray-600 mb-4">Crafting Your Visual Legacy</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Logo Design</li>
+                        <li>• Brand Guidelines</li>
+                        <li>• Color Schemes</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Strategy & Positioning</h3>
+                    <p class="text-gray-600 mb-4">Own Your Space in the Market</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Tailored strategies to define your unique voice and position your brand for maximum
+                            impact.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Marketing Materials</h3>
+                    <p class="text-gray-600 mb-4">Print and digital marketing materials that maintain brand consistency.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• We design tailored email campaigns that nurture leads and convert prospects into loyal
+                            customers.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Strategy</h3>
+                    <p class="text-gray-600 mb-4">Strategic planning to position your brand effectively in the market.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Market Research</li>
+                        <li>• Brand Positioning</li>
+                        <li>• Competitive Analysis</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-box text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Packaging Design</h3>
+                    <p class="text-gray-600 mb-4">Eye-catching packaging that makes your products stand out on shelves.
+                    </p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Product Packaging</li>
+                        <li>• Label Design</li>
+                        <li>• Structural Design</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Branding</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive digital brand presence across all online platforms.</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>• Social Media Branding</li>
+                        <li>• Email Templates</li>
+                        <li>• Digital Assets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Gallery Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold text-brand-black mb-6">Our Portfolio</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore our latest branding projects and see how we've helped businesses transform their identity.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4" id="gallery">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-brand-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Let's Create Something Amazing</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to transform your brand? Get in touch and let's discuss your project.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-300"><a href="tel:+254705391994">+254705391994</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">info.redadi@gmail.com</p>
+                                <p class="text-gray-300"><a href="mailto:info.redani@gmail.com">Contact Us via Email</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-brand-red rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Address</p>
+                                <p class="text-gray-300">Hison Plaza, Biashara Street, Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fab fa-facebook-f text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fab fa-twitter text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fab fa-instagram text-white"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-brand-red rounded-lg flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fab fa-linkedin-in text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">First Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-brand-red text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold mb-2">Last Name</label>
+                                <input type="text"
+                                    class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-brand-red text-white">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-brand-red text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Project Type</label>
+                            <select
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-brand-red text-white">
+                                <option>Signage Manufacturing</option>
+                                <option>Exhibition Booths</option>
+                                <option>Packaging Design</option>
+                                <option>Marketing Materials</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea rows="4"
+                                class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-brand-red text-white"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-brand-red hover:bg-red-700 text-white px-8 py-4 rounded-lg font-semibold transition-colors">
+                            <a href="mailto:info.redani@gmail.com">Send Email</a>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="text-2xl font-bold text-brand-red">Redadi</div>
+                        <div class="text-2xl font-light text-white ml-1">Group</div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Creating powerful brands that make lasting impressions and drive
+                        business success.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Signage Manufacturing</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Exhibition Booths</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Packaging Design</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Marketing Materials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-brand-red transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-brand-red transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Stay updated with our latest projects and insights.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-brand-red text-white">
+                        <button class="bg-brand-red hover:bg-red-700 px-4 py-2 rounded-r-lg transition-colors">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Redadi Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-2xl hover:text-brand-red">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modalImage" src="/placeholder.svg" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+            <div class="text-white text-center mt-4">
+                <h3 id="modalTitle" class="text-xl font-bold"></h3>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Portfolio filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const filter = this.getAttribute('data-filter');
+
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-brand-red', 'text-white');
+                    btn.classList.add('bg-gray-200', 'text-brand-black');
+                });
+                this.classList.add('active', 'bg-brand-red', 'text-white');
+                this.classList.remove('bg-gray-200', 'text-brand-black');
+
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Modal functionality
+        function openModal(imageSrc, title) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+
+            modalImage.src = imageSrc;
+            modalTitle.textContent = title;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+        });
+    </script>
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'brand-red': '#DC2626',
+                    'brand-black': '#0F0F0F',
+                }
+            }
+        }
+    }
+
+    let portfolioItems = [
+        {
+            'title': 'Brand Identity',
+            'subtitle': ' Brand identity for tech startup',
+            'image': 'images/img6.jpg'
+        },
+        {
+            'title': 'Identity Surge',
+            'subtitle': 'Igniting a tech startup with a bold visual narrative',
+            'image': 'images/img7.jpg'
+        },
+        {
+            'title': 'NeoBrand Vision',
+            'subtitle': 'Crafting a futuristic identity for tech innovators',
+            'image': 'images/img21.jpg'
+        },
+        {
+            'title': 'Pulse of Innovation',
+            'subtitle': 'A vibrant brand for a tech-driven future',
+            'image': 'images/img9.jpg'
+        },
+        {
+            'title': 'Identity',
+            'subtitle': 'Defining a startup’s essence with dynamic design',
+            'image': 'images/img10.jpg'
+        },
+        {
+            'title': 'Quantum Brand Leap',
+            'subtitle': 'Transforming tech vision into iconic branding',
+            'image': 'images/img11.jpg'
+        },
+        {
+            'title': 'SparkVibe Blueprint',
+            'subtitle': 'Building a bold identity for tech trailblazers',
+            'image': 'images/img12.jpg'
+        },
+        {
+            'title': 'TechFusion Identity',
+            'subtitle': 'Blending innovation with striking visual design',
+            'image': 'images/img13.jpg'
+        },
+        {
+            'title': 'Ignite Persona',
+            'subtitle': 'Crafting a standout brand for tech pioneers',
+            'image': 'images/img14.jpg'
+        },
+        {
+            'title': 'TechCanvas Identity',
+            'subtitle': 'Painting a bold future for a tech startup',
+            'image': 'images/img15.jpg'
+        },
+        {
+            'title': 'Vivid Signature',
+            'subtitle': 'A distinctive brand for cutting-edge innovators',
+            'image': 'images/img16.jpg'
+        },
+        {
+            'title': 'Brand Momentum',
+            'subtitle': 'Powering a tech startup with iconic visuals',
+            'image': 'images/img17.jpg'
+        },
+        {
+            'title': 'Eclipse Identity',
+            'subtitle': 'Creating a bold, modern brand for tech leaders',
+            'image': 'images/img18.jpg'
+        },
+        {
+            'title': 'NovaBrand Spark',
+            'subtitle': 'Illuminating a tech startup’s unique story',
+            'image': 'images/img19.jpg'
+        },
+        {
+            'title': 'Wave Identity',
+            'subtitle': 'Designing a dynamic brand for tomorrow’s tech',
+            'image': 'images/img20.jpg'
+        },
+        {
+            'title': 'SparkVibe Identity',
+            'subtitle': 'Igniting tech startups with vibrant brand stories',
+            'image': 'images/img21.jpg'
+        },
+        {
+            'title': 'NeoPulse Brand',
+            'subtitle': 'Crafting bold identities for tomorrow’s innovators',
+            'image': 'images/img22.jpg'
+        },
+        {
+            'title': 'Quantum Canvas',
+            'subtitle': 'Painting visionary brands for tech pioneers',
+            'image': 'images/img23.jpg'
+        },
+        {
+            'title': 'TechFlare Persona',
+            'subtitle': 'Defining the future with striking visual design',
+            'image': 'images/img24.jpg'
+        },
+        {
+            'title': 'Brand Surge',
+            'subtitle': 'Powering tech ventures with iconic identities',
+            'image': 'images/img25.jpg'
+        },
+        {
+            'title': 'VisionForge Identity',
+            'subtitle': 'Shaping unforgettable brands for tech leaders',
+            'image': 'images/img26.jpg'
+        },
+        {
+            'title': 'NovaTech Signature',
+            'subtitle': 'Creating dynamic identities for cutting-edge startups',
+            'image': 'images/img27.jpg'
+        },
+        {
+            'title': 'Eclipse Branding',
+            'subtitle': 'Illuminating tech innovation with bold visuals',
+            'image': 'images/img28.jpg'
+        },
+        {
+            'title': 'FusionSpark Brand',
+            'subtitle': 'Blending creativity and tech for standout identities',
+            'image': 'images/img29.jpg'
+        },
+        {
+            'title': 'HorizonVibe',
+            'subtitle': 'Designing the next wave of tech brand excellence',
+            'image': 'images/img30.jpg'
+        }
+
+    ];
+
+    // Get the container element
+    const container = document.getElementById('gallery');
+
+    // Create HTML string for all portfolio items
+    const portfolioHTML = portfolioItems.map(item => `
+  <div class="gallery-item branding group cursor-pointer" onclick="openModal('/placeholder.svg?height=600&width=800', 'TechFlow Brand Identity')">
+                <div class="relative overflow-hidden rounded-xl shadow-lg">
+                    <img src=${item.image} alt=${item.title}" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-brand-red/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <i class="fas fa-search-plus text-3xl mb-2"></i>
+                            <p class="font-semibold">View Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h3 class="text-xl font-bold text-brand-black">${item.title}</h3>
+                    <p class="text-gray-600">${item.subtitle}</p>
+                </div>
+            </div>
+`).join('');
+
+    // Set the container's innerHTML
+    container.innerHTML = portfolioHTML;
+
+
+</script>
+
+</html>
